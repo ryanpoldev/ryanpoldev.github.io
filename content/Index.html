@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!---Sticky Nav-->
+  <nav class="navbar navbar-expand navbar-light custom-nav py-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand align-items-center fw-bold fs-6 text-uppercase tracking-wider" href="#">Ryan Pol</a>
+
+      <div class="d-flex align-items-center ms-auto">
+        <a href="contact" class="nav-link fw-medium me-3 fs-6 standard-nav-link">Let's Talk!</a>
+
+        <button class="btn theme-toggle-btn d-flex align-items-center justify-content-center" type="button"
+          id="themeToggler" aria-label="Toggle Theme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+            class="bi bi-sun-fill d-block-light" viewBox="0 0 16 16">
+            <path
+              d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+            class="bi bi-moon-stars-fill d-none-light" viewBox="0 0 16 16" style="display: none;">
+            <path
+              d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.3 7.3 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+            <path
+              d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.74 1.74 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162a1.74 1.74 0 0 0-1.097-1.097l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.74 1.74 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!---Content-->
+  <Main class="container py-4 bg-dark" style="max-width:fit-content;">
+
+    <!---Profile+About+Skills/Tools-->
+    <div class="row g-3 m-3">
+
+      <!--Profile-->
+      <div class="col-12 col-md-4">
+        <!--Details-->
+        <div class="card-panel profile-card">
+          <!--Picture-->
+          <div class="Avatar">Picture</div>
+          <!--Name-->
+          <h3 class="h3">Ryan Pol Austria<br>
+            Malabanan</h3>
+          <!--Work-->
+          <p>Work</p>
+          <!--Resume/Talk-->
+          <div class="d-flex">
+            <div class="resume"><i>icon</i>resume</div>
+            <div class="talk"><i>Icon</i>talk</div>
+          </div>
+
+          <div class="contact">
+            <div class="mail"><i>icon</i>mail</div>
+            <div class="number"><i>Icomn</i>09826</div>
+            <div class="location"><i>Icon</i>location</div>
+          </div>
+
+
+          <div class="socials">
+            <div class="git"></div>
+            <div class="fb"></div>
+            <div class="ig"></div>
+            <div class="linkin"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--About+Skills/Tools-->
+      <div class="col-12">
+        <!--About-->
+        <div class="card-panel">y</div>
+        <!--Skills/Tools-->
+        <div class="card-panel">y</div>
+      </div>
+
+    </div>
+  </Main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/script.js" defer></script>
+
+</body>
+
+</html>
