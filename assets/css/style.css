@@ -1,5 +1,314 @@
+/* ══════════════════════════════════════════════════════════
+   BACKGROUND
+══════════════════════════════════════════════════════════ */
+[data-bs-theme="light"] body {
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+[data-bs-theme="dark"] body {
+  background-image: none;
+  background-color: #0f0f14;
+}
+
+/* Subtle tinted overlay so cards pop */
+[data-bs-theme="light"] body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(240, 242, 230, 0.42);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ══════════════════════════════════════════════════════════
+   GLASSMORPHISM CARDS  — light & dark variants
+══════════════════════════════════════════════════════════ */
+
+/* --- Light mode glass --- */
+[data-bs-theme="light"] .glass-card {
+  background: rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 20px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+[data-bs-theme="light"] .glass-card:hover {
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+/* --- Dark mode glass --- */
+[data-bs-theme="dark"] .glass-card {
+  background: rgba(28, 28, 40, 0.65);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+[data-bs-theme="dark"] .glass-card:hover {
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.5),
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ══════════════════════════════════════════════════════════
+   NAVBAR
+══════════════════════════════════════════════════════════ */
+.custom-nav {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+}
+
+[data-bs-theme="dark"] .custom-nav {
+  background: rgba(15, 15, 25, 0.75);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.theme-toggle-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background 0.2s;
+}
+
+.theme-toggle-btn:hover {
+  background: rgba(0, 0, 0, 0.14);
+}
+
+[data-bs-theme="dark"] .theme-toggle-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ══════════════════════════════════════════════════════════
+   MAIN LAYOUT — outer spacing matching the screenshot
+══════════════════════════════════════════════════════════ */
+.main-wrapper {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+/* ══════════════════════════════════════════════════════════
+   PROFILE CARD  (left column)
+══════════════════════════════════════════════════════════ */
 .profile-card {
-    background-color: blueviolet;
-    width: 500px;
-    height: 700px;
+  padding: 2rem 1.5rem;
+}
+
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+}
+
+.profile-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
+}
+
+.profile-role {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.profile-action-btns .btn {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Divider */
+.glass-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.12), transparent);
+  margin: 1.1rem 0;
+}
+
+[data-bs-theme="dark"] .glass-divider {
+  background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
+}
+
+/* Contact list */
+.contact-list li {
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.22rem 0;
+  opacity: 0.8;
+}
+
+.contact-list a {
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.contact-list a:hover { opacity: 1; }
+
+/* Social icons */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: inherit;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.social-icons a:hover {
+  background: rgba(0, 0, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+[data-bs-theme="dark"] .social-icons a {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ══════════════════════════════════════════════════════════
+   ABOUT / SKILLS CARDS  (right column)
+══════════════════════════════════════════════════════════ */
+.content-card {
+  padding: 1.75rem 1.75rem;
+}
+
+.card-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.65rem;
+}
+
+.card-subheading {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.about-text {
+  font-size: 0.84rem;
+  line-height: 1.65;
+  opacity: 0.75;
+  margin-bottom: 0;
+}
+
+/* "What I do" pill buttons */
+.skill-pill {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 9px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.82);
+  color: #fff;
+  border: none;
+  cursor: default;
+  transition: background 0.2s;
+}
+
+[data-bs-theme="dark"] .skill-pill {
+  background: rgba(255, 255, 255, 0.12);
+  color: #e8e8ef;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Tech icon row */
+.tech-icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.tech-icon-grid img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));
+  transition: transform 0.2s;
+}
+
+.tech-icon-grid img:hover {
+  transform: scale(1.12) translateY(-2px);
+}
+
+/* Tag badges */
+.tag-badge {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border-radius: 7px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+}
+
+[data-bs-theme="dark"] .tag-badge {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ══════════════════════════════════════════════════════════
+   BOTTOM SECTION CARDS (Education, Achievements, etc.)
+══════════════════════════════════════════════════════════ */
+.section-card {
+  padding: 1.75rem 1.75rem;
+  min-height: 160px;
+}
+
+/* ══════════════════════════════════════════════════════════
+   FOOTER
+══════════════════════════════════════════════════════════ */
+.site-footer {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  padding: 1.5rem 0 2rem;
+  text-align: center;
 }
