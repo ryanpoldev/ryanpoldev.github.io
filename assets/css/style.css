@@ -75,6 +75,11 @@
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
 }
 
+.talk-hover:hover {
+  color: rgb(132, 190, 249);
+
+}
+
 [data-bs-theme="dark"] .custom-nav {
   background: rgba(15, 15, 25, 0.75);
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
@@ -169,7 +174,7 @@
   width: 34px;
   height: 34px;
   border-radius: 9px;
-  background: rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.010);
   border: 1px solid rgba(0, 0, 0, 0.08);
   color: inherit;
   font-size: 1rem;
