@@ -18,3 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+const avatar = document.getElementById("avatar");
+
+const professional = "../assets/img/Profile.png";
+const wacky = "../assets/img/wacky.png";
+
+avatar.addEventListener("mouseenter", () => {
+  avatar.src = wacky;
+});
+
+avatar.addEventListener("mouseleave", () => {
+  avatar.src = professional;
+});

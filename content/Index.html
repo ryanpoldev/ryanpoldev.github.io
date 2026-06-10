@@ -19,8 +19,8 @@
       <a class="navbar-brand fw-med fs-6 text-uppercase" href="#">Ryan Pol</a>
       <div class="d-flex align-items-center ms-auto gap-3">
         <a href="#" class="nav-link fw-normal fs-6">Let's Talk!</a>
-        <button class="btn theme-toggle-btn d-flex align-items-center justify-content-center"
-          type="button" id="themeToggler" aria-label="Toggle Theme">
+        <button class="btn theme-toggle-btn d-flex align-items-center justify-content-center" type="button"
+          id="themeToggler" aria-label="Toggle Theme">
           <i class="bi bi-sun-fill d-block-light" id="iconLight"></i>
           <i class="bi bi-moon-stars-fill" id="iconDark" style="display:none;"></i>
         </button>
@@ -38,7 +38,7 @@
 
           <!-- Photo -->
           <div class="text-center mb-3">
-            <img src="../assets/img/Profile.png" class="profile-photo" alt="Ryan Pol Austria Malabanan">
+            <img src="../assets/img/Profile.png" id="avatar" class="profile-photo" alt="Ryan Pol Austria Malabanan">
           </div>
 
           <!-- Name / Role -->
@@ -112,12 +112,18 @@
           <h4 class="card-heading">Skills &amp; Tools Grid</h4>
 
           <div class="tech-icon-grid">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" class="my-2 me-2">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap"class="my-2 me-2">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" class="my-2 me-2">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" class="my-2 me-2">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" class="my-2 me-2">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP" class="my-2 me-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
+              title="HTML5" class="my-2 me-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap" title="Bootstrap" class="my-2 me-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" title="JavaScript" class="my-2 me-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+              title="MySQL" class="my-2 me-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3"
+              class="my-2 me-2">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP"
+              class="my-2 me-2">
           </div>
 
           <div class="d-flex flex-wrap gap-2">
@@ -137,31 +143,39 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-8">
+      <div class="col-12 col-md-5">
         <div class="glass-card section-card">
           <h4 class="card-heading">Achievements</h4>
         </div>
       </div>
 
       <!-- ── UI Designs ──────────────────────────────────── -->
-      <div class="col-12">
+      <div class="col-12 col-md-9">
         <div class="glass-card section-card" style="min-height: 180px;">
           <h4 class="card-heading">UI Designs</h4>
         </div>
       </div>
 
       <!-- ── Portfolio ──────────────────────────────────── -->
-      <div class="col-12">
+      <div class="col-12 col-md-9">
         <div class="glass-card section-card" style="min-height: auto; padding-bottom: 1.75rem;">
           <div class="d-flex align-items-center justify-content-between mb-3">
             <h4 class="card-heading mb-0">Portfolio</h4>
             <button class="btn btn-dark btn-sm px-3">View All</button>
           </div>
           <div class="row g-3">
-            <div class="col-6 col-md-6"><div class="rounded-3" style="height:160px; background: rgba(0,0,0,0.06);"></div></div>
-            <div class="col-6 col-md-6"><div class="rounded-3" style="height:160px; background: rgba(0,0,0,0.06);"></div></div>
-            <div class="col-6 col-md-6"><div class="rounded-3" style="height:160px; background: rgba(0,0,0,0.06);"></div></div>
-            <div class="col-6 col-md-6"><div class="rounded-3" style="height:160px; background: rgba(0,0,0,0.06);"></div></div>
+            <div class="col-6 col-md-6">
+              <div class="rounded-3" style="height:160px; background: rgba(0,0,0,0.06);"></div>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="rounded-3" style="height:160px; background: rgba(0,0,0,0.06);"></div>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="rounded-3" style="height:160px; background: rgba(0,0,0,0.06);"></div>
+            </div>
+            <div class="col-6 col-md-6">
+              <div class="rounded-3" style="height:160px; background: rgba(0,0,0,0.06);"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -181,19 +195,8 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
-  <script>
-    const toggler = document.getElementById('themeToggler');
-    const html = document.documentElement;
-    const iconLight = document.getElementById('iconLight');
-    const iconDark = document.getElementById('iconDark');
-
-    toggler.addEventListener('click', () => {
-      const isDark = html.getAttribute('data-bs-theme') === 'dark';
-      html.setAttribute('data-bs-theme', isDark ? 'light' : 'dark');
-      iconLight.style.display = isDark ? 'block' : 'none';
-      iconDark.style.display  = isDark ? 'none'  : 'block';
-    });
-  </script>
+  <script src="../assets/js/script.js"></script>
 
 </body>
+
 </html>
