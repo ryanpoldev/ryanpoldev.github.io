@@ -214,7 +214,7 @@
 }
 
 .card-heading {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 0.65rem;
 }
@@ -294,7 +294,6 @@
 /* BOTTOM SECTION CARDS (Education, Achievements, etc.)*/
 .section-card {
   padding: 2rem 1.5rem;
-  min-height: 160px;
 }
 
 /*FOOTER*/
