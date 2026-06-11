@@ -31,3 +31,12 @@ avatar.addEventListener("mouseenter", () => {
 avatar.addEventListener("mouseleave", () => {
   avatar.src = professional;
 });
+
+
+document.querySelectorAll('.uiworks-custom').forEach(img => {
+    img.addEventListener('click', function () {
+        document.getElementById('modalImage').src = this.src;
+    });
+});
+
+

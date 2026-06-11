@@ -230,7 +230,6 @@
   font-size: 0.84rem;
   line-height: 1.65;
   opacity: 0.75;
-  
 }
 
 /*"What I do" pill buttons*/
@@ -296,6 +295,14 @@
   padding: 2rem 1.5rem;
 }
 
+/*---UI DESIGN--------*/
+.uiworks-custom {
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.uiworks-custom:hover {
+    transform: scale(1.1);
+}
 /*FOOTER*/
 .site-footer {
   font-size: 0.75rem;
