@@ -40,3 +40,34 @@ document.querySelectorAll('.uiworks-custom').forEach(img => {
 });
 
 
+function updateClock() {
+    const now = new Date();
+    
+    // Get the short weekday name (e.g., "Fri")
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const dayName = days[now.getDay()];
+    
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    
+    // Determine AM or PM
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    
+    // Convert to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // The hour '0' should be '12'
+    
+    // Add leading zeros if needed
+    hours = hours < 10 ? '0' + hours : hours;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    
+    // Combine into your exact format
+    const timeString = `${dayName} ${hours}:${minutes} ${ampm} Manila, PH`;
+    
+    // Update the HTML text
+    document.getElementById('clock').textContent = timeString;
+}
+
+// Start the clock immediately and update it every second to keep it accurate
+updateClock();
+setInterval(updateClock, 1000);

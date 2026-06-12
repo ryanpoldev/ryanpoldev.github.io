@@ -19,7 +19,7 @@
     <div class="container">
       <a class="navbar-brand fw-med fs-6 text-uppercase" href="#">Ryan Pol</a>
       <div class="d-flex align-items-center ms-auto gap-3">
-        <a href="#" class="nav-link talk-hover fw-normal fs-6">Let's Talk!</a>
+        <div id="clock" class="fs-6">Fri 12:00 PM</div>
         <button class="btn theme-toggle-btn d-flex align-items-center justify-content-center" type="button"
           id="themeToggler" aria-label="Toggle Theme">
           <i class="bi bi-sun-fill d-block-light" id="iconLight"></i>
@@ -51,7 +51,7 @@
                 <i class="bi bi-download me-1"></i>Download Resume
               </button>
               <button class="btn btn-outline-secondary btn-light btn-sm">
-                <i class="bi bi-envelope me-1"></i>Send Email
+                <i class="bi bi-envelope me-1"></i>Let's Talk!
               </button>
             </div>
           </div>
@@ -101,18 +101,18 @@
           </p>
 
           <h5 class="card-subheading fw-semibold my-3">Services</h5>
-          <div class="d-flex flex-wrap align-items-center gap-3 mt-2">
+          <div class="align-items-center mt-2">
             <span class="skill-pill col-sm-4 p-2">Front-end Development</span>
             <span class="skill-pill col-sm-3 p-2">UI/UX Designer</span>
             <span class="skill-pill col-sm-3 p-2">Ipsum Lorem</span>
           </div>
         </div>
 
-        <!---Skills & Tools Card--->
+        <!---Techstack--->
         <div class="glass-card content-card flex-fill">
-          <h4 class="card-heading">Skills &amp; Tools Grid</h4>
+          <h4 class="card-heading">Tech Stack</h4>
 
-          <div class="tech-icon-grid my-3 gap-5" style="justify-content: center;">
+          <div class="tech-icon-grid gap-3 align-items-center" style="justify-content: center;">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"
               title="HTML5"></a>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
@@ -124,12 +124,14 @@
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"
               title="CSS3">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP">
-          </div>
-
-          <div class="d-flex flex-wrap gap-5 mt-4" style="justify-content: center; text-align: center;">
-            <span class="tag-badge col-sm-2 p-2">Database</span>
-            <span class="tag-badge col-sm-2 p-2">Networking</span>
-            <span class="tag-badge col-sm-2 p-2 ">Styling</span>
+             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+              title="Python">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"
+              title="VS Code">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"
+              title="Figma">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+              title="GitHub">
           </div>
         </div>
 
@@ -137,7 +139,7 @@
 
       <!---Education & Achievements--->
       <div class="col-12 col-md-4">
-        <div class="glass-card section-card">
+        <div class="glass-card content-card">
           <h4 class="card-heading">Education</h4>
           <p class="mb-2 fw-semibold">Bachelor of Science in Information Technology</p>
           <p class="about-text">Polytechnic University of the Philippines Sto Tomas 2024 - Present</p>
@@ -146,7 +148,7 @@
       </div>
 
       <div class="col-12 col-md-5">
-        <div class="glass-card section-card">
+        <div class="glass-card content-card">
           <h4 class="card-heading">Achievements</h4>
           <hr class="glass-divider mb-4">
 
@@ -155,27 +157,27 @@
 
       <!--UI Designs-->
       <div class="col-12 col-md-9">
-        <div class="glass-card section-card">
+        <div class="glass-card content-card">
           <div class="d-flex align-items-center justify-content-between mb-3">
             <h4 class="card-heading">UI Designs</h4>
             <button class="btn btn-dark btn-sm px-3 rounded">View All</button>
           </div>
           <hr class="glass-divider-1">
           <div class="row g-3 my-2 justify-content-center align-items-center">
-            <img src="assets/img/Iskonek.png" class="col-sm-2 uiworks-custom" data-bs-toggle="modal" alt="Iskonek Website"
-              data-bs-target="#imageModal">
+            <img src="assets/img/Iskonek.png" class="col-sm-2 uiworks-custom" data-bs-toggle="modal"
+              alt="Iskonek Website" data-bs-target="#imageModal">
 
             <img src="assets/img/TopUp.png" class="col-sm-2 uiworks-custom" data-bs-toggle="modal" alt="TopUp Website"
               data-bs-target="#imageModal">
 
-            <img src="assets/img/Fresh Harvest.png" class="col-sm-2 uiworks-custom" data-bs-toggle="modal" alt="Fresh Harvest E-commerce Website"
-              data-bs-target="#imageModal">
+            <img src="assets/img/Fresh Harvest.png" class="col-sm-2 uiworks-custom" data-bs-toggle="modal"
+              alt="Fresh Harvest E-commerce Website" data-bs-target="#imageModal">
 
-            <img src="assets/img/MediCare.png" class="col-sm-2 uiworks-custom" data-bs-toggle="modal" alt="MediCare Landpage"
-              data-bs-target="#imageModal">
+            <img src="assets/img/MediCare.png" class="col-sm-2 uiworks-custom" data-bs-toggle="modal"
+              alt="MediCare Landpage" data-bs-target="#imageModal">
 
-            <img src="assets/img/controller.png" class="col-sm-2 uiworks-custom" data-bs-toggle="modal" alt="PS5 Feature Website"
-              data-bs-target="#imageModal">       
+            <img src="assets/img/controller.png" class="col-sm-2 uiworks-custom" data-bs-toggle="modal"
+              alt="PS5 Feature Website" data-bs-target="#imageModal">
           </div>
           <hr class="glass-divider-1">
         </div>
@@ -191,7 +193,7 @@
 
       <!---Portfolio--->
       <div class="col-12 col-md-9">
-        <div class="glass-card section-card" style="min-height: auto; padding-bottom: 1.75rem;">
+        <div class="glass-card content-card">
           <div class="d-flex align-items-center justify-content-between mb-3">
             <h4 class="card-heading mb-0">Portfolio</h4>
             <button class="btn btn-dark btn-sm px-3 rounded">View All</button>
