@@ -236,16 +236,14 @@
   opacity: 0.75;
 }
 
-/*"What I do" pill buttons*/
+/*Services*/
 .skill-pill {
   display: inline-flex;
   justify-content: center;     
-  border-radius: 9px;
+  border-radius: 5px;
   font-size: 0.78rem;
   font-weight: 600;
-  background: #000000da; 
-  color: #ffffff;
-  border: none;
+  border: solid;
   cursor: default;
   transition: background 0.2s;
 }
@@ -271,6 +269,10 @@
   transition: transform 0.2s;
 }
 
+[data-bs-theme="dark"] .github-logo {
+    filter: invert(1);
+} 
+
 .tech-icon-grid img:hover {
   transform: scale(1.12) translateY(-2px);
 }
@@ -285,6 +287,11 @@
 .uiworks-custom:hover {
     transform: scale(1.1);
 }
+
+/*PROJECTS*/
+
+
+
 /*FOOTER*/
 .site-footer {
   font-size: 0.75rem;
