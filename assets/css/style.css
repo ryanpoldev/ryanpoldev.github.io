@@ -332,12 +332,6 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-
-
-
 /*---UI DESIGN--------*/
 .uiworks-custom {
   border-radius: 15px;
@@ -359,6 +353,11 @@
   transform: scale(1.02) ;
 }
 
+[data-bs-theme="light"] .btn-custom {
+  background-color: #f3f3f3; }
+
+[data-bs-theme="dark"] .btn-custom {
+  background-color:rgba(255, 255, 255, 0.12) }
 
 /*FOOTER*/
 .site-footer {

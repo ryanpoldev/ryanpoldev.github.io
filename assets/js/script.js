@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+/*hover*/
 const avatar = document.getElementById("avatar");
 
 const professional = "../assets/img/Profile.png";
@@ -40,34 +41,30 @@ document.querySelectorAll('.uiworks-custom').forEach(img => {
 });
 
 
+/*clock*/
 function updateClock() {
-    const now = new Date();
-    
-    // Get the short weekday name (e.g., "Fri")
-    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-    const dayName = days[now.getDay()];
-    
-    let hours = now.getHours();
-    let minutes = now.getMinutes();
-    
-    // Determine AM or PM
-    const ampm = hours >= 12 ? 'PM' : 'AM';
-    
-    // Convert to 12-hour format
-    hours = hours % 12;
-    hours = hours ? hours : 12; // The hour '0' should be '12'
-    
-    // Add leading zeros if needed
-    hours = hours < 10 ? '0' + hours : hours;
-    minutes = minutes < 10 ? '0' + minutes : minutes;
-    
-    // Combine into your exact format
-    const timeString = `${dayName} ${hours}:${minutes} ${ampm} Manila, PH`;
-    
-    // Update the HTML text
-    document.getElementById('clock').textContent = timeString;
-}
+            const now = new Date();
+            
+            // Format options to match "Saturday 5:55 PM"
+            const options = { 
+                weekday: 'long', 
+                hour: 'numeric', 
+                minute: '2-digit', 
+                hour12: true 
+            };
+            
+            // Generate the formatted string based on the user's local time
+            const timeString = now.toLocaleDateString('en-US', options);
+            
+            // Clean up the string format (toLocaleDateString often adds a comma after the day)
+            const cleanTimeString = timeString.replace(',', '');
+            
+            // Inject the time into the HTML element
+            document.getElementById('live-clock').textContent = cleanTimeString;
+        }
 
-// Start the clock immediately and update it every second to keep it accurate
-updateClock();
-setInterval(updateClock, 1000);
+        // Run the clock function immediately when the page loads
+        updateClock();
+
+        // Update the clock every second (1000 milliseconds) to keep it accurate
+        setInterval(updateClock, 1000);
