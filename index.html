@@ -101,9 +101,9 @@
           </p>
           <h5 class="card-subheading fw-semibold">Services</h5>
           <div class="container">
-            <span class="skill-pill col-sm-4 p-2 bg-dark text-white">Front-end Development</span>
-            <span class="skill-pill col-sm-3 p-2 bg-dark text-white">UI/UX Designer</span>
-            <span class="skill-pill col-sm-3 p-2 bg-dark text-white">Ipsum Lorem</span>
+            <span class="skill-pill col-sm-4 p-2">Front-end Development</span>
+            <span class="skill-pill col-sm-3 p-2">UI/UX Designer</span>
+            <span class="skill-pill col-sm-3 p-2">Ipsum Lorem</span>
           </div>
         </div>
 
@@ -128,26 +128,33 @@
               title="VS Code">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"
               title="Figma">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"  class="github-logo" alt="GitHub"
-              title="GitHub">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="github-logo"
+              alt="GitHub" title="GitHub">
           </div>
         </div>
       </div>
 
-      <!---Education & Achievements--->
+      <!---Education & Certs--->
       <div class="col-12 col-md-4">
         <div class="glass-card content-card">
           <h4 class="card-heading">Education</h4>
-          <p class="mb-2 fw-semibold">Bachelor of Science in Information Technology</p>
-          <p class="about-text">Polytechnic University of the Philippines Sto Tomas 2024 - Present</p>
-
+          <div class="educ-card">
+            <h6 class="mb-0">Bachelor of Science in Information Technology</h6>
+            <p class="about-text mb-0 mt-1">Polytechnic University of the Philippines Sto Tomas 2024 - Present</p>
+          </div>
         </div>
       </div>
 
       <div class="col-12 col-md-5">
         <div class="glass-card content-card">
-          <h4 class="card-heading">Achievements</h4>
-          <hr class="glass-divider mb-4">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <h4 class="card-heading mb-0">Certification</h4>
+            <button class="btn fw-normal btn-sm px-3 rounded-1" style="cursor: pointer;" >View All ></button>
+          </div>
+          <div class="cert-card p-2 rounded-1" style="cursor: pointer;">
+            <h6 class="mb-0 mt-1">Getting Started with Cisco Packet Tracer</h6>
+            <p class="about-text mb-0 ">Cisco Networking Academy program · 2026</p>
+          </div>
         </div>
       </div>
 
@@ -156,7 +163,7 @@
         <div class="glass-card content-card">
           <div class="d-flex align-items-center justify-content-between mb-3">
             <h4 class="card-heading">UI Designs</h4>
-            <button class="btn btn-dark btn-sm px-3 rounded-1">View All</button>
+            <button class="btn fw-normal btn-sm px-3 rounded-1" style="cursor: pointer;">View All ></button>
           </div>
           <hr class="glass-divider-1">
           <div class="row g-4 align-items-center">
@@ -188,66 +195,70 @@
       </div>
 
       <!---Projects--->
-   <div class="col-12 col-md-9">
-  <div class="glass-card content-card">
-    <div class="d-flex align-items-center justify-content-between mb-3">
-      <h4 class="card-heading mb-0">Projects</h4>
-      <button class="btn btn-dark btn-sm px-3 rounded-1">View All</button>
-    </div>
-    <hr class="glass-divider-1">
-
-    <div class="row row-cols-1 row-cols-sm-2 g-3 mx-auto w-100 w-md-75">  
-      <div class="col">
-        <div class="card project-anim h-80">
-          <img class="card-img-top" src="assets/img/First_Project.png" alt="MediCare">
-          <div class="card-body">
-            <h5 class="card-title">TapTopUp</h5>
-            <p class="about-text">A simple and user-friendly top-up platform that allows users to purchase mobile load and gaming credits quickly and securely.</p>
-             <a href="https://ryanpoldev.github.io/TapTopUp/" target="_blank">
-<button class="btn btn-dark btn-sm px-3 rounded-1">See more</button></a>
+      <div class="col-12 col-md-9">
+        <div class="glass-card-project content-card">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <h4 class="card-heading mb-0">Projects</h4>
+            <button class="btn fw-normal btn-sm px-3 rounded-1" style="cursor: pointer;">View All ></button>
           </div>
+          <hr class="glass-divider-1">
+
+          <div class="row row-cols-1 row-cols-sm-2 g-3 mx-auto w-100 w-md-75">
+            <div class="col">
+              <div class="card project-anim h-80">
+                <img class="card-img-top" src="assets/img/First_Project.png" alt="MediCare">
+                <div class="card-body"  >
+                  <h5 class="card-title">TapTopUp</h5>
+                  <p class="about-text">A simple and user-friendly top-up platform that allows users to purchase mobile
+                    load and gaming credits quickly and securely.</p>
+                  <a href="https://ryanpoldev.github.io/TapTopUp/" target="_blank">
+                    <button class="btn btn-dark btn-sm px-3 rounded-1">See more</button></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card project-anim h-80">
+                <img class="card-img-top" src="assets/img/stock_photo.png" alt="MediCare">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem ipsum</h5>
+                  <p class="about-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet
+                    consectetur adipiscing elit quisque faucibus.</p>
+                  <button class="btn btn-dark btn-sm px-3 rounded-1">See more</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card project-anim h-80">
+                <img class="card-img-top" src="assets/img/stock_photo.png" alt="MediCare">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem ipsum</h5>
+                  <p class="about-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet
+                    consectetur adipiscing elit quisque faucibus.</p>
+                  <button class="btn btn-dark btn-sm px-3 rounded-1">See more</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card project-anim h-80">
+                <img class="card-img-top" src="assets/img/stock_photo.png" alt="MediCare">
+                <div class="card-body">
+                  <h5 class="card-title">Lorem ipsum</h5>
+                  <p class="about-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet
+                    consectetur adipiscing elit quisque faucibus.</p>
+                  <button class="btn btn-dark btn-sm px-3 rounded-1">See more</button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <hr class="glass-divider-1">
         </div>
       </div>
-
-       <div class="col">
-        <div class="card project-anim h-80">
-          <img class="card-img-top" src="assets/img/stock_photo.png" alt="MediCare">
-          <div class="card-body">
-            <h5 class="card-title">Lorem ipsum</h5>
-            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-             <button class="btn btn-dark btn-sm px-3 rounded-1">See more</button>
-          </div>
-        </div>
-      </div>
-
-       <div class="col">
-        <div class="card project-anim h-80">
-          <img class="card-img-top" src="assets/img/stock_photo.png" alt="MediCare">
-          <div class="card-body">
-            <h5 class="card-title">Lorem ipsum</h5>
-            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-             <button class="btn btn-dark btn-sm px-3 rounded-1">See more</button>
-          </div>
-        </div>
-      </div>
-
-       <div class="col">
-        <div class="card project-anim h-80">
-          <img class="card-img-top" src="assets/img/stock_photo.png" alt="MediCare">
-          <div class="card-body">
-            <h5 class="card-title">Lorem ipsum</h5>
-            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus.</p>
-             <button class="btn btn-dark btn-sm px-3 rounded-1">See more</button>
-          </div>
-        </div>
-      </div>
-      
-     
-    </div>
-
-    <hr class="glass-divider-1">
-  </div>
-</div>
 
       <!---Footer--->
       <footer class="site-footer">
