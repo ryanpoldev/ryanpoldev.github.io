@@ -204,6 +204,10 @@
   opacity: 0.8;
 }
 
+[data-bs-theme="light"] .contact-color{
+  color: rgb(0, 0, 0);
+  opacity: 90%;
+}
 .contact-list a {
   text-decoration: none;
   color: inherit;
@@ -260,7 +264,7 @@
 .about-text {
   font-size: 0.84rem;
   line-height: 1.65;
-  opacity: 0.75;
+  opacity: 0.80;
 }
 
 /*Services*/
