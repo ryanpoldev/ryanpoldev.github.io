@@ -330,11 +330,34 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-
-/*view all btn*/
 [data-bs-theme-light].btn {
   color: rgba(0, 0, 0, 0.5);
 }
+
+/*--btn--*/
+[data-bs-theme="light"] .view-btn {
+color: #0f0f1486;
+}
+[data-bs-theme="light"] .view-btn:hover{ 
+  color: #0f0f14c0;
+}
+
+[data-bs-theme="dark"] .view-btn:hover{ 
+  color: #a0a0a0d4;
+}
+
+[data-bs-theme="light"] .project-btn {
+  color: #0f0f14d8;
+}
+
+[data-bs-theme="light"] .project-btn:hover{
+  color: #0f0f1486;
+}
+
+[data-bs-theme="dark"] .project-btn:hover{
+  color: #cdcdcdcd;
+}
+
 
 /*---UI DESIGN--------*/
 .uiworks-custom {
