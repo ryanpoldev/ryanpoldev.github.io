@@ -40,6 +40,11 @@ document.querySelectorAll('.uiworks-custom').forEach(img => {
     });
 });
 
+document.querySelectorAll('.cert-card').forEach(card => {
+    card.addEventListener('click', function () {
+        document.getElementById('modalImage').src = this.dataset.certImg;
+    });
+});
 
 /*clock*/
 function updateClock() {
