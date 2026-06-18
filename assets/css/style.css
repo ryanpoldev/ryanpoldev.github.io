@@ -106,6 +106,7 @@
 .clock-custom {
   font-size: 16px;
 }
+
 .talk-hover:hover {
   color: rgb(132, 190, 249);
 
@@ -167,14 +168,17 @@
 }
 
 .resume-custom {
-  background: #000000da; 
-  color: white;;
+  background: #000000da;
+  color: white;
+  ;
 }
 
-.resume-custom:hover{
-  background: #8a8d90;;
+.resume-custom:hover {
+  background: #8a8d90;
+  ;
   color: white;
 }
+
 [data-bs-theme="dark"] .resume-custom {
   background-color: rgba(255, 255, 255, 0.12);
 }
@@ -182,16 +186,17 @@
 [data-bs-theme="dark"] .resume-custom:hover {
   background-color: #35353a44;
 }
+
 /*Divider*/
 .glass-divider {
   border: none;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(0,0,0,0.12), transparent);
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.12), transparent);
   margin: 1.1rem 0;
 }
 
 [data-bs-theme="dark"] .glass-divider {
-  background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
 }
 
 /*Contact list*/
@@ -204,10 +209,11 @@
   opacity: 0.8;
 }
 
-[data-bs-theme="light"] .contact-color{
+[data-bs-theme="light"] .contact-color {
   color: rgb(0, 0, 0);
   opacity: 90%;
 }
+
 .contact-list a {
   text-decoration: none;
   color: inherit;
@@ -215,7 +221,9 @@
   transition: opacity 0.2s;
 }
 
-.contact-list a:hover { opacity: 1; }
+.contact-list a:hover {
+  opacity: 1;
+}
 
 /*Social icons*/
 .social-icons a {
@@ -245,7 +253,7 @@
 
 /*ABOUT / SKILLS CARDS  (right column)*/
 .content-card {
- padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .card-heading {
@@ -270,7 +278,7 @@
 /*Services*/
 .skill-pill {
   display: inline-flex;
-  justify-content: center;     
+  justify-content: center;
   border-radius: 5px;
   font-size: 0.78rem;
   font-weight: 600;
@@ -281,7 +289,8 @@
 
 [data-bs-theme="light"] .skill-pill {
   background: rgba(0, 0, 0, 0.010);
-  border: 1px solid rgba(0, 0, 0, 0.08);}
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
 
 [data-bs-theme="dark"] .skill-pill {
   background: rgba(255, 255, 255, 0.12);
@@ -300,13 +309,13 @@
   width: 42px;
   height: 42px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.12));
   transition: transform 0.2s;
 }
 
 [data-bs-theme="dark"] .github-logo {
-    filter: invert(1);
-} 
+  filter: invert(1);
+}
 
 .tech-icon-grid img:hover {
   transform: scale(1.12) translateY(-2px);
@@ -336,13 +345,14 @@
 
 /*--btn--*/
 [data-bs-theme="light"] .view-btn {
-color: #0f0f1486;
+  color: #0f0f1486;
 }
-[data-bs-theme="light"] .view-btn:hover{ 
+
+[data-bs-theme="light"] .view-btn:hover {
   color: #0f0f14c0;
 }
 
-[data-bs-theme="dark"] .view-btn:hover{ 
+[data-bs-theme="dark"] .view-btn:hover {
   color: #a0a0a0d4;
 }
 
@@ -350,11 +360,11 @@ color: #0f0f1486;
   color: #0f0f14d8;
 }
 
-[data-bs-theme="light"] .project-btn:hover{
+[data-bs-theme="light"] .project-btn:hover {
   color: #0f0f1486;
 }
 
-[data-bs-theme="dark"] .project-btn:hover{
+[data-bs-theme="dark"] .project-btn:hover {
   color: #cdcdcdcd;
 }
 
@@ -367,24 +377,26 @@ color: #0f0f1486;
 }
 
 .uiworks-custom:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 /*PROJECTS*/
 .project-anim {
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .project-anim:hover {
-  transform: scale(1.02) ;
+  transform: scale(1.02);
 }
 
 [data-bs-theme="light"] .btn-custom {
-  background-color: #f3f3f3; }
+  background-color: #f3f3f3;
+}
 
 [data-bs-theme="dark"] .btn-custom {
-  background-color:rgba(255, 255, 255, 0.12) }
+  background-color: rgba(255, 255, 255, 0.12)
+}
 
 /*FOOTER*/
 .site-footer {
