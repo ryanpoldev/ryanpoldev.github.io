@@ -371,7 +371,6 @@
 
 /*---UI DESIGN--------*/
 .uiworks-custom {
-  border-radius: 15px;
   transition: all 0.3s ease;
   border-color: black;
 }
@@ -382,12 +381,21 @@
 }
 
 /*PROJECTS*/
+/* Project Card */
 .project-anim {
-  transition: transform 0.3s ease;
+    overflow: hidden;
 }
 
-.project-anim:hover {
-  transform: scale(1.02);
+/* Project Image */
+.project-anim .card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Zoom Image on Card Hover */
+.project-anim:hover .card-img-top {
+    transform: scale(1.1);
 }
 
 [data-bs-theme="light"] .btn-custom {
@@ -396,6 +404,10 @@
 
 [data-bs-theme="dark"] .btn-custom {
   background-color: rgba(255, 255, 255, 0.12)
+}
+
+.card-img-top:hover{
+  transform: scale(1.0);
 }
 
 /*FOOTER*/
